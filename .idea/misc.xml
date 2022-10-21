@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Code Java/ProductREST/ProductREST/pom.xml" />
+        <option value="$PROJECT_DIR$/Code Java/DocumentManager/DocumentManager/pom.xml" />
+        <option value="$PROJECT_DIR$/Code Java/RegisterAndLoginApp/RegisterAndLoginApp/pom.xml" />
+        <option value="$PROJECT_DIR$/Code Java/SpringJwtAuthentication/SpringJwtAuthentication/pom.xml" />
+        <option value="$PROJECT_DIR$/Amigoscode/UserService/userservice/pom.xml" />
+        <option value="$PROJECT_DIR$/Amigoscode/Spring Boot Tutorial 2022/pom.xml" />
+        <option value="$PROJECT_DIR$/Java Guides/StudentManagementSystem/StudentManagementSystem/pom.xml" />
+        <option value="$PROJECT_DIR$/Java Guides/EmployeeManagementSystem/EmployeeManagementSystem/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="corretto-17" project-jdk-type="JavaSDK" />
+</project>

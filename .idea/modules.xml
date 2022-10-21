@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Code Java/DocumentManager/DocumentManager/DocumentManager.iml" filepath="$PROJECT_DIR$/Code Java/DocumentManager/DocumentManager/DocumentManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java Guides/EmployeeManagementSystem/EmployeeManagementSystem/EmployeeManagementSystem.iml" filepath="$PROJECT_DIR$/Java Guides/EmployeeManagementSystem/EmployeeManagementSystem/EmployeeManagementSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Code Java/ProductREST/ProductREST/ProductREST.iml" filepath="$PROJECT_DIR$/Code Java/ProductREST/ProductREST/ProductREST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Code Java/RegisterAndLoginApp/RegisterAndLoginApp/RegisterAndLoginApp.iml" filepath="$PROJECT_DIR$/Code Java/RegisterAndLoginApp/RegisterAndLoginApp/RegisterAndLoginApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Code Java/SpringJwtAuthentication/SpringJwtAuthentication/SpringJwtAuthentication.iml" filepath="$PROJECT_DIR$/Code Java/SpringJwtAuthentication/SpringJwtAuthentication/SpringJwtAuthentication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java Guides/StudentManagementSystem/StudentManagementSystem/StudentManagementSystem.iml" filepath="$PROJECT_DIR$/Java Guides/StudentManagementSystem/StudentManagementSystem/StudentManagementSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Tutorials.iml" filepath="$PROJECT_DIR$/.idea/Tutorials.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Amigoscode/Spring Boot Tutorial 2022/demo.iml" filepath="$PROJECT_DIR$/Amigoscode/Spring Boot Tutorial 2022/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Amigoscode/UserService/userservice/userservice.iml" filepath="$PROJECT_DIR$/Amigoscode/UserService/userservice/userservice.iml" />
+    </modules>
+  </component>
+</project>
