@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+  <head>
+      <meta charset="UTF-8">
+      <title>Document Manager</title>
+      <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+  </head>
+  <body>
+      <div class="container-fluid text-center">
+          <div>
+              <h1>Document Manager</h1>
+          </div>
+          <div class="text-success">
+              <h3>[[${message}]]</h3>
+          </div>
+          <div class="row border rounded m-3 p-3">
+              <th:block th:each="doc : ${listDocs}">
+                  <div class="col">
+                      <div>
+                         <img th:src="@{/images/document.png}" width="50"/>
+                      </div>
+                      <div>
+                          <a th:href="@{'/download?id='+${doc.id}}">[[${doc.name}]]</a>
+                      </div>
+                      <div>
+                          ([[${#numbers.formatInteger(doc.size, 4, 'COMMA')}]] bytes)
+                      </div>
+                  </div>
+              </th:block>
+          </div>
+          <div class="row" style="margin: 0 auto;">
+              Total Size Used:&nbsp;<p class="text-center" th:utext="${#numbers.formatInteger(sizeSum, 4, 'COMMA')}"></p>&nbsp;bytes
+          </div>
+          <form th:action="@{/upload}" method="POST" class="" enctype="multipart/form-data" style="max-width: 600px; margin: 0 auto;">
+              <div class="border rounded m-3">
+                <h2>Upload Your Files:</h2>
+                  <p>
+                      <input type="file" name="document" required/>
+                  </p>
+                  <p>
+                      <input type="submit" value="Upload Seleted File" class="btn btn-primary"/>
+                  </p>
+              </div>
+          </form>
+      </div>
+  </body>
+</html>
