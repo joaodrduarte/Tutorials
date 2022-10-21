@@ -1,2 +1,2 @@
-# Tutorials
+# 🐱‍💻 Tutorials 🐱‍💻
  Repo for Tutorials
