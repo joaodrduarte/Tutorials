@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 
-@Component
+//@Component //commented this to disable the route. uncomment to turn it back on!
 public class MyFirstTimerRouter extends RouteBuilder {
 
     @Autowired
@@ -35,14 +35,14 @@ public class MyFirstTimerRouter extends RouteBuilder {
 
 }
 
-@Component
+//@Component //commented this to disable the route. uncomment to turn it back on!
 class GetCurrentTimeBean{
     public String getCurrentTime(){
         return "Current Date/Time: " + LocalDateTime.now();
     }
 }
 
-@Component
+//@Component  //commented this to disable the route. uncomment to turn it back on!
 class SimpleLoggingProcessComponent{
     private Logger logger = LoggerFactory.getLogger(SimpleLoggingProcessComponent.class);
 
