@@ -140,3 +140,23 @@
   
   #### Original Video
 [Click here to see the original tutorial video from Java Guides](https://www.youtube.com/watch?v=HYGnVeCs0Yg) or [here to see the original GitHub repository](https://github.com/RameshMF/student-management-system-springboot).
+
+ ### Spring Boot Login and Registration with MySQL Database [↗](https://github.com/joaodrduarte/Tutorials/tree/main/Java%20Guides/RegLog) 
+  #### Creator Description
+  >In this video tutorial, we will learn how to develop registration, login, and logout features using Spring security.
+  >What you’ll learn?
+   > 1. Learn how to build a Spring MVC web application using spring boot
+   > 2. Learn how to configure spring security in the spring boot project
+   > 3. How to develop end to end Registration implementation
+   > 4. How to develop custom login feature implementation
+   > 5. Spring Security authentication with a database-backed UserDetailsService
+   > 6. Spring Security logout feature
+   > 7. Learn how to create JPA entities - User and Role ( Many to Many Relationship)
+   > 8. Configure MySQL database in Spring boot project
+   > 9. How to develop Registration and Login forms using Thymeleaf
+   > 10. How to integrate Spring Security in Thymeleaf
+   > 11. How to use Thymeleaf attributes to display security details like principle (user email), roles etc
+
+  
+  #### Original Video
+  [Click here to see the original tutorial video from Java Guides](https://www.youtube.com/watch?v=L9oWG6aj_U8) or [here to see the original GitHub repository](https://github.com/RameshMF/registration-login-spring-boot-security-thymeleaf-hibernate).
