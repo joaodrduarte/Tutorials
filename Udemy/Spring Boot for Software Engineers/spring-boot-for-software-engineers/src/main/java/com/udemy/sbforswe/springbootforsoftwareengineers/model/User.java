@@ -5,12 +5,12 @@ import com.udemy.sbforswe.springbootforsoftwareengineers.enums.Gender;
 import java.util.UUID;
 
 public class User {
-    private final UUID userUUID;
-    private final String firstName;
-    private final String lastName;
-    private final Gender gender;
-    private final int age;
-    private final String email;
+    private UUID userUUID;
+    private String firstName;
+    private String lastName;
+    private Gender gender;
+    private int age;
+    private String email;
 
     public User(UUID userUUID, String firstName, String lastName, Gender gender, int age, String email) {
         this.userUUID = userUUID;
@@ -21,6 +21,12 @@ public class User {
         this.email = email;
     }
 
+    public User() {
+    }
+
+    public void setUserUUID(UUID userUUID){
+        this.userUUID = userUUID;
+    }
     public UUID getUserUUID() {
         return userUUID;
     }
