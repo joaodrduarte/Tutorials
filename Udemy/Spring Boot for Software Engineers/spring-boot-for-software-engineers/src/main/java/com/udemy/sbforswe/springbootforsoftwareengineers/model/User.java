@@ -1,18 +1,22 @@
 package com.udemy.sbforswe.springbootforsoftwareengineers.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.udemy.sbforswe.springbootforsoftwareengineers.enums.Gender;
 
+import java.time.LocalDate;
 import java.util.UUID;
 
+@SuppressWarnings("unused")
 public class User {
-    private UUID userUUID;
-    private String firstName;
-    private String lastName;
-    private Gender gender;
-    private int age;
-    private String email;
+    private final UUID userUUID;
+    private final String firstName;
+    private final String lastName;
+    private final Gender gender;
+    private final int age;
+    private final String email;
 
-    public User(UUID userUUID, String firstName, String lastName, Gender gender, int age, String email) {
+    public User(@JsonProperty("userUUID") UUID userUUID, @JsonProperty("firstName") String firstName, @JsonProperty("lastName") String lastName, @JsonProperty("gender") Gender gender, @JsonProperty("age") int age, @JsonProperty("email") String email) {
         this.userUUID = userUUID;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -21,20 +25,17 @@ public class User {
         this.email = email;
     }
 
-    public User() {
-    }
-
-    public void setUserUUID(UUID userUUID){
-        this.userUUID = userUUID;
-    }
+    @JsonProperty("id")
     public UUID getUserUUID() {
         return userUUID;
     }
 
+    @JsonIgnore
     public String getFirstName() {
         return firstName;
     }
 
+    @JsonIgnore
     public String getLastName() {
         return lastName;
     }
@@ -49,6 +50,18 @@ public class User {
 
     public String getEmail() {
         return email;
+    }
+
+    public String getFullName(){
+        return firstName + " " + lastName;
+    }
+
+    public int getYearOfBirth(){
+        return  LocalDate.now().minusYears(age).getYear();
+    }
+
+    public static User newUser(UUID userUUID, User user){
+        return new User(userUUID, user.getFirstName(), user.getLastName(), user.gender, user.getAge(), user.getEmail());
     }
 
     @Override
